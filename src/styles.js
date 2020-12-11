@@ -132,7 +132,6 @@ export {
   Description,
   ShopImage,
   ListWrapper,
-  ThingWrapper,
   ThemeButton,
   SearchBarStyled,
   DetailWrapper,

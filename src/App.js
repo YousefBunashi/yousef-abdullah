@@ -1,22 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
 import ThingList from "./components/ThingList";
 import TreasureList from "./components/TreasureList";
 import { Route, Switch } from "react-router";
 
+import { observer } from "mobx-react";
+import Routes from "./Routes";
 function App() {
   return (
     <div>
-      <Switch>
-        <Route>
-          <ThingList />
-        </Route>
-        <Route>
-          <TreasureList />
-        </Route>
-      </Switch>
+      <h1>test</h1>
+      <Routes />
     </div>
   );
 }
 
-export default App;
+export default observer(App);

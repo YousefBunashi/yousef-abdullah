@@ -1,11 +1,9 @@
-// import things from "../things.js";
 import { observer } from "mobx-react";
-import thingsStore from "./store/thingStore";
+import thingsStore from "../store/thingStore";
 
 // Stayles
-import { ListWrapper } from "./styles";
+import { ListWrapper } from "../styles";
 // Comopnents
-
 import ThingItem from "./ThingItem";
 
 const ThingList = () => {

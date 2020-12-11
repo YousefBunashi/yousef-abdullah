@@ -1,12 +1,9 @@
-// import treasures from "../treasures.js";
-
 import { observer } from "mobx-react";
+import thingsStore from "../store/thingStore";
 // Stayles
 import { ListWrapper } from "../styles";
 // Comopnents
 import ThingItem from "./ThingItem";
-
-import thingsStore from "./store/ThingStore";
 
 const TreasureList = () => {
   const treasureList = thingsStore.things
