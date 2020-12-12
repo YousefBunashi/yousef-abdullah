@@ -6,16 +6,22 @@ export const AuthButtonStyled = styled.button`
   padding: 0.25em 1em;
   margin-left: 0.5em;
   border-radius: 3px;
-  background-color: ${(props) => props.theme.pink};
-  color: ${(props) => props.theme.backgroundColor};
+  border-color: white;
+  background-color: #0095ff;
+  color: white;
+  float: right;
 `;
 
 export const Logo = styled(Link)`
-  padding: 0.75em;
-
-  img {
-    width: 8rem;
-  }
+  font-size: 1em;
+  padding: 0.25em 1em;
+  margin-left: 0.5em;
+  border-radius: 3px;
+  border-color: white;
+  background-color: #0095ff;
+  color: white;
+  float: right;
+  text-decoration: none;
 `;
 export const GlobalStyle = createGlobalStyle` 
 body {
@@ -40,7 +46,6 @@ export const NavItem = styled(NavLink)`
   &.active {
     color: ___CSS_1___;
     background-color: fuchsia;
-  }
   }
 `;
 export const CreateButtonStyled = styled.button`
@@ -74,7 +79,7 @@ const ShopImage = styled.img`
 const Title = styled.h1`
   text-align: center;
   color: purple;
-  background  black;
+  background: black;
 `;
 
 const Description = styled.h4`
@@ -88,14 +93,13 @@ const ListWrapper = styled.div`
 `;
 
 export const BurgerWrapper = styled.div`
-  
   img {
     width: 200px;
     height: 200px;
     object-fit: cover;
-  `;
+  }
+`;
 export const ThingWrapper = styled.div`
-  
   img {
     width: 200px;
     height: 200px;
@@ -105,7 +109,7 @@ export const ThingWrapper = styled.div`
     text-align: center;
 
     &.bbq-price {
-      color: ${(props) => props.theme.pink};};
+      color: ${(props) => props.theme.pink};
     }
   }
 `;
@@ -126,6 +130,16 @@ const DetailWrapper = styled.div`
 `;
 export const DeleteButtonStyled = styled.p`
   color: ${(props) => props.theme.red};
+`;
+
+export const StyledLink = styled(Link)`
+  color: black;
+  margin: 3%;
+`;
+export const styledForm = styled.body`
+  align-items: center;
+  align-content: center;
+  vertical-align: middle;
 `;
 export {
   Title,

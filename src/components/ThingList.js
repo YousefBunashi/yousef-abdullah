@@ -1,5 +1,5 @@
 import { observer } from "mobx-react";
-import thingsStore from "../store/thingStore";
+import randomsStore from "../store/thingStore";
 
 // Stayles
 import { ListWrapper } from "../styles";
@@ -7,12 +7,12 @@ import { ListWrapper } from "../styles";
 import ThingItem from "./ThingItem";
 
 const ThingList = () => {
-  const thingList = thingsStore.things
-    .filter((thing) => thing.isTreasure === false)
-    .map((thing) => <ThingItem thing={thing} key={thing.id} />);
+  const randomList = randomsStore.randoms.map((random) => (
+    <ThingItem random={random} key={random.id} />
+  ));
   return (
     <div className="container">
-      <ListWrapper className="row">{thingList}</ListWrapper>
+      <ListWrapper className="row">{randomList}</ListWrapper>
     </div>
   );
 };

@@ -2,26 +2,26 @@ import { action, makeObservable, observable } from "mobx";
 
 import instance from "./instance";
 
-class ThingsStore {
-  things = [];
+class RandomsStore {
+  randoms = [];
 
   constructor() {
     makeObservable(this, {
-      things: observable,
-      fetchThings: action,
+      randoms: observable,
+      fetchRandoms: action,
     });
   }
-  fetchThings = async () => {
+  fetchRandoms = async () => {
     try {
-      const response = await instance.get("/things");
-      this.things = response.data;
+      const response = await instance.get("/things/random");
+      this.randoms = response.data;
     } catch (error) {
-      console.error("ThingsStore -> fetchThings -> error", error);
+      console.error("RandomsStore -> fetchRandoms -> error", error);
     }
   };
 }
 
-const thingsStore = new ThingsStore();
-thingsStore.fetchThings();
+const randomsStore = new RandomsStore();
+randomsStore.fetchRandoms();
 
-export default thingsStore;
+export default randomsStore;
