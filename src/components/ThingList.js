@@ -12,7 +12,10 @@ const ThingList = () => {
   ));
   return (
     <div className="container">
-      <ListWrapper className="row">{randomList}</ListWrapper>
+      <div className="row">
+        <div className="col-sm"></div>
+        <ListWrapper className="row">{randomList}</ListWrapper>
+      </div>
     </div>
   );
 };

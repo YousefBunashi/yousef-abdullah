@@ -74,7 +74,7 @@ const ShopImage = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 30%;
 `;
 const Title = styled.h1`
   text-align: center;
@@ -86,19 +86,14 @@ const Description = styled.h4`
   text-align: center;
 `;
 const ListWrapper = styled.div`
-  align-items: center;
-  justify-content: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 40px;
   display: flex;
-  object-fit: cover;
+  flex-wrap: wrap;
+  justify-content: center 40px space-between;
+  padding: 40px;
 `;
 
-export const BurgerWrapper = styled.div`
-  img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
-`;
 export const ThingWrapper = styled.div`
   img {
     width: 200px;
